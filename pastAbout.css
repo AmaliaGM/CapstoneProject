@@ -167,6 +167,7 @@ button.hamb {
 .navbartop {
     display: flex;
     align-items: center;
+    width: 40%;
 }
 
 .nbt {
@@ -202,7 +203,7 @@ button.hamb {
     margin-bottom: 20%;
 }
 
-.title1 {
+.ab-title1 {
     font-family: 'Cocogoose', sans-serif;
     color: #ec5242;
     font-size: 230%;
@@ -225,20 +226,23 @@ button.hamb {
     align-content: center;
     justify-content: center;
     box-sizing: content-box;
+    z-index: 51;
 }
 
-.circle {
+.ab-circle {
     position: relative;
     margin-bottom: 5%;
     margin-right: 70%;
     margin-top: -5%;
+    z-index: 50;
 }
 
-.circlecont {
+.ab-circlecont {
     margin-top: 0%;
+    z-index: 50;
 }
 
-.comment-1 {
+.ab-comment-1 {
     font-family: 'Lato', sans-serif;
     font-size: 80%;
     font-weight: 100;
@@ -248,23 +252,19 @@ button.hamb {
     margin-top: 0%;
     margin-bottom: 0%;
     text-align: center;
+    z-index: 51;
+    position: absolute;
+    margin-right: 5%;
+    background-color: white;
 }
 
-.date {
+.ab-date {
     margin-top: 55%;
     text-align: center;
+    margin-left: 5%;
 }
 
-.date-set {
-    font-family: 'Cocogoose', sans-serif;
-    font-weight: 1000;
-    font-size: 170%;
-    color: #272a31;
-    margin-top: 3%;
-    margin-bottom: 3%;
-}
-
-.location {
+.ab-location {
     font-family: 'Lato',sans-serif;
     font-size: 100%;
     margin-top: 2%;
@@ -281,7 +281,7 @@ button.hamb {
     text-align: center;
 }
 
-.pr-title {
+.ab-pr-title {
     color:#272a31;
     font-family: 'Lato', sans-serif;
     font-size: 130%;
@@ -303,12 +303,14 @@ button.hamb {
     text-align: center;
 }
 
-.itemsimg {
+.ab-itemsimg {
     align-self: center;
     text-align: center;
     margin-left: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     margin-top: 5%;
+    padding: 3%;
+    border: solid gray;
 }
 
 hr {
@@ -316,20 +318,20 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
-    .title1 {
+    .ab-title1 {
         font-size: 400%;
         line-height: 70px;
         margin-bottom: 15%;
         margin-left: 10%;
     }
 
-    .comment {
+    .ab-comment {
         background-color: white;
         margin-left: 10%;
         margin-top: -19%
     }
 
-    .itemsimg {
+    .ab-itemsimg {
         align-self: center;
         text-align: center;
     }
@@ -357,13 +359,14 @@ hr {
 
 .surgeryImg {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
 .surgimg {
-    width: 40%;
-    margin-top: 10%;
-    
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
 }
 
 .previous {
@@ -405,6 +408,16 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
+    .surgeryImg {
+        flex-direction: row;
+
+    }
+
+    .surgimg {
+        width: 40%;
+        margin-top: 5%;
+    }
+
     .partner-holder {
         margin-left: 0;
         margin-right: 0;

@@ -44,14 +44,18 @@ li.nav-item {
   .show {
     display: block;
   }
-  
+
   .navbar {
-    min-height: 70px;
-    display: flex;
+    min-height: 50px;
+    display: block;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin: auto;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    margin: 0;
   }
   
   #nav-menu {
@@ -69,6 +73,7 @@ li.nav-item {
     top: 70px;
     background-color: white;
     text-align: left;
+    z-index: 100;
   }
   
   .nav-link {
@@ -86,15 +91,6 @@ li.nav-item {
 .navBar1 {
     display: flex;
     flex-direction: column;
-}
-
-.navbar {
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    margin: auto;
 }
 
 .hamburguer {
@@ -127,6 +123,8 @@ li.nav-item {
 }
   
 button.hamb {
+    margin-top: 3%;
+    margin-left: 3%;
     border-style: none;
     background-color: transparent;
     cursor: pointer;
@@ -147,6 +145,7 @@ button.hamb {
     top: 70px;
     background-color: white;
     text-align: left;
+    z-index: 99;
 }
   
 .nav-link {
@@ -156,17 +155,21 @@ button.hamb {
 .navbar2 {
     display: flex;
     background-color: #ffff;
+    position: fixed;
+    z-index: 98;
+    width: 100%;
 }
 
 .logo {
     text-align: left;
-    margin-right: 40%;
-    margin-left: 15%;
+    margin-right: 20%;
+    margin-left: 50%;
 }
 
 .navbartop {
     display: flex;
     align-items: center;
+    width: 40%;
 }
 
 .nbt {
@@ -185,10 +188,16 @@ button.hamb {
 
     .nbt {
         display: flex;
+        text-align: right;
+        justify-self: right;
     }
 
     .navbar {
         display: none;
+    }
+
+    .navbartop {
+        width: 40%;
     }
     
 }
@@ -200,6 +209,7 @@ button.hamb {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 20%;
+    padding-top: 10%;
 }
 
 .title1 {
@@ -219,7 +229,7 @@ button.hamb {
     color: #ec5242;  
     margin-bottom: 0%;  
     font-size: 110%;
-    margin-top: 15%;
+    margin-top: 25%;
 }
 
 .comment {
@@ -228,11 +238,12 @@ button.hamb {
     padding: 0%;
     margin-right: 5%;
     margin-left: 0%;
-    margin-top: -13%;
+    margin-top: -10%;
     border: solid white 3px;
     align-content: center;
     justify-content: center;
     box-sizing: content-box;
+    z-index: 51;
 }
 
 .circle {
@@ -240,10 +251,12 @@ button.hamb {
     margin-bottom: 5%;
     margin-left: 60%;
     margin-top: -5%;
+    z-index: 50;
 }
 
 .circlecont {
     margin-top: 0%;
+    z-index: 50;
 }
 
 .comment-1 {
@@ -255,6 +268,7 @@ button.hamb {
     padding: 3%;
     margin-top: 0%;
     margin-bottom: 0%;
+    z-index: 51;
 }
 
 .date {
@@ -385,12 +399,16 @@ button.hamb {
     }
 
     .comment {
-        margin-top: -5%;
+        margin-top: -10%;
         margin-right: 35%
     }
 
     .date {
         margin-top: 15%;
+    }
+
+    .circle {
+        margin-left: 70%;
     }
 
     .join {
@@ -499,6 +517,7 @@ button.hamb {
 }
 
 .speaker-descript {
+    color:#272a31;
     font-family: 'Lato', serif;
     text-align: left;
     font-size: 60%;
@@ -523,7 +542,7 @@ button.hamb {
     top: 10px;
     left: 10px;
     width: 90%;
-    height: 90%;
+    height: auto;
     margin-right: 10px;
 }
 
@@ -570,5 +589,221 @@ button.hamb {
     
     .partner-class {
         font-size: 150%
+    }
+}
+
+.ab-title1 {
+    font-family: 'Cocogoose', sans-serif;
+    color: #ec5242;
+    font-size: 230%;
+    font-weight: 900;
+    line-height: 40px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 0%;
+    text-align: center;
+}
+
+.comment {
+    position: absolute;
+    background-color: #d3d3d3;
+    padding: 0%;
+    margin-right: 5%;
+    margin-left: 0%;
+    margin-top: -13%;
+    border: solid white 3px;
+    align-content: center;
+    justify-content: center;
+    box-sizing: content-box;
+    z-index: 51;
+}
+
+.ab-circle {
+    position: relative;
+    margin-bottom: 5%;
+    margin-right: 70%;
+    margin-top: -5%;
+    z-index: 50;
+}
+
+.ab-circlecont {
+    margin-top: 0%;
+    z-index: 50;
+}
+
+.ab-comment-1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 80%;
+    font-weight: 100;
+    line-height: 25px;
+    align-self: center;
+    padding: 3%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+    z-index: 51;
+    position: absolute;
+    margin-right: 5%;
+    background-color: white;
+}
+
+.ab-date {
+    margin-top: 55%;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.ab-location {
+    font-family: 'Lato',sans-serif;
+    font-size: 100%;
+    margin-top: 2%;
+}
+
+.ab-program {
+    background-color:white;
+    padding-bottom: 20%;
+    padding-top: 10%;
+}
+
+.ab-program-title {
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.ab-pr-title {
+    color:#272a31;
+    font-family: 'Lato', sans-serif;
+    font-size: 130%;
+    text-align: center;
+    padding-top: 0%;
+    font-weight: 100;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.logocreat {
+    margin-top: 5%;
+    font-family: 'Lato', serif;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.ab-itemss {
+    text-align: center;
+}
+
+.ab-itemsimg {
+    align-self: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-bottom: 20%;
+    margin-top: 5%;
+    padding: 3%;
+    border: solid gray;
+}
+
+hr {
+    text-decoration: dashed;
+}
+
+@media screen and (min-width: 768px) {
+    .ab-title1 {
+        font-size: 400%;
+        line-height: 70px;
+        margin-bottom: 15%;
+        margin-left: 10%;
+    }
+
+    .ab-comment {
+        background-color: white;
+        margin-left: 10%;
+        margin-top: -19%
+    }
+
+    .ab-itemsimg {
+        align-self: center;
+        text-align: center;
+    }
+
+}
+
+.featured-speakers {
+    background-color:#ffff;
+    margin-bottom: 0%;
+}
+
+.feat-title {
+    text-align: center;
+}
+
+.title-speakers {
+    text-align: center;
+    color: #272a31;
+    font-family: 'Lato', serif;
+    margin-top: 10%;
+    margin-bottom: 0%;
+    font-size: 100%;
+    font-weight: 800;
+}
+
+.surgeryImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.surgimg {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.previous {
+    text-align: center;
+    font-family: 'Lato', serif;
+}
+
+.partnership {
+    background-color: #272a31;
+    justify-content: center;
+}
+
+.partner-class {
+    color: #d3d3d3;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+    margin-top: 10%;
+    padding-top: 6%;
+    margin-bottom: 0%;
+}
+
+.part {
+   text-align: center;
+}
+
+.indicator {
+    align-self: center;
+       
+}
+
+.partner-holder {
+    display: flex;
+    flex-direction: column;
+    color: #393939;
+    margin-left: 5%;
+    margin-right: 15%;
+    padding-bottom: 10%;
+}
+
+@media screen and (min-width: 768px) {
+    .surgeryImg {
+        flex-direction: row;
+
+    }
+
+    .surgimg {
+        width: 40%;
+        margin-top: 5%;
     }
 }
