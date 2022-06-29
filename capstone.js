@@ -110,7 +110,6 @@ speak.appendChild(speakerDescr);
 speaker2.classList = 'speaker 2';
 cards.appendChild(speaker2);
 
-const square = document.createElement('div')
 square.classList = 'square';
 cards.appendChild(square);
 
@@ -146,7 +145,6 @@ speak.appendChild(speakerDescr);
 speaker3.classList = 'speaker 3';
 cards.appendChild(speaker3);
 
-const square = document.createElement('div')
 square.classList = 'square';
 cards.appendChild(square);
 
@@ -182,7 +180,6 @@ speak.appendChild(speakerDescr);
 speaker4.classList = 'speaker 4';
 cards.appendChild(speaker4);
 
-const square = document.createElement('div')
 square.classList = 'square';
 cards.appendChild(square);
 
@@ -218,7 +215,6 @@ speak.appendChild(speakerDescr);
 speaker5.classList = 'speaker 5';
 cards.appendChild(speaker5);
 
-const square = document.createElement('div')
 square.classList = 'square';
 cards.appendChild(square);
 
