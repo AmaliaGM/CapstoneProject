@@ -57,10 +57,15 @@ const speaker5 = [
     image: 'assets/dottedSquare.png',
 },
 ];
-const container = document.getElementsByClassName('featured-speakers');
+
+const main = document.getElementById('main')
+const container = document.createElement('div');
+container.classList = 'featured-speakers';
+main.appendChild(container);
+
 const speakersCards = document.createElement('div');
 speakersCards.classList = 'speakers-cards';
-
+container.appendChild(speakersCards)
 
 const cards = document.createElement('ul');
 cards.classList = 'cards';
@@ -246,4 +251,4 @@ speakerDescr.classList = 'speaker-descript';
 speakerDescr.innerHTML = speaker5[3].badge2;
 speak.appendChild(speakerDescr);
 
-container.appendChild(speakersCards); 
+document.body.appendChild(main); 
