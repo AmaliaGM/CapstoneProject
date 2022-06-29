@@ -9,7 +9,7 @@
 }
 
 .navItem1 {
-    display: flex;
+    display: none;
     justify-content: flex-end;
     background-color: #272a31;
     align-items: center;
@@ -24,6 +24,57 @@
     font-weight: 300;
 }
 
+li.nav-item {
+    list-style: none;
+    min-width: 160px;
+    z-index: 1;
+    padding: 20px;
+    font-size: 32px;
+    height: 44px;
+    font-weight: 600;
+    margin-left: 15px;
+  }
+  
+  a.nav-link {
+    color: black;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  
+  #nav-menu {
+    display: none;
+  }
+  
+  #nav-menu.active {
+    display: block;
+    width: 100vw;
+    height: 90vh;
+    margin: 0;
+    padding: 20px 0 0 0;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    background-color: white;
+    text-align: left;
+  }
+  
+  .nav-link {
+    transition: 0.7s ease;
+  }
+  
 .home-page {
     height: fit-content;
     background-color: #d3d3d3;
@@ -127,6 +178,11 @@ button.hamb {
 }
 
 @media screen and (min-width: 768px) {
+    .navItem1 {
+        display: flex;
+        text-align: right;
+    }
+
     .nbt {
         display: flex;
     }
@@ -139,16 +195,17 @@ button.hamb {
 
 .title {
     height: 200%;
-    width: auto;
+    width: 80%;
     text-align: left;
     margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 20%;
 }
 
 .title1 {
     font-family: 'Cocogoose', sans-serif;
     color: #ec5242;
-    font-size: 300%;
+    font-size: 270%;
     font-weight: 900;
     line-height: 40px;
     margin-top: 1%;
@@ -162,6 +219,7 @@ button.hamb {
     color: #ec5242;  
     margin-bottom: 0%;  
     font-size: 110%;
+    margin-top: 15%;
 }
 
 .comment {
@@ -200,13 +258,13 @@ button.hamb {
 }
 
 .date {
-    margin-top: 35%;
+    margin-top: 55%;
 }
 
 .date-set {
     font-family: 'Cocogoose', sans-serif;
     font-weight: 1000;
-    font-size: 130%;
+    font-size: 170%;
     color: #272a31;
     margin-top: 3%;
     margin-bottom: 3%;
@@ -226,6 +284,7 @@ button.hamb {
 
 .program-title {
     margin-bottom: 5%;
+    text-align: center;
 }
 
 .pr-title {
@@ -291,6 +350,11 @@ button.hamb {
     background-color: #272a31;
 }
 
+.programLink {
+    display: flex;
+    justify-content: center;
+}
+
 .join {
     width: 30%;
     height: 15%;
@@ -304,13 +368,86 @@ button.hamb {
     margin: 18%;
 }
 
+.seeProgram {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .title1 {
+        font-size: 400%;
+        line-height: 70px;
+        margin-bottom: 10%;
+    }
+
+    .title2 {
+        margin-top: 10%;
+        font-size: 190%;
+    }
+
+    .comment {
+        margin-top: -5%;
+        margin-right: 35%;
+    }
+
+    .date {
+        margin-top: 15%;
+    }
+
+    .join {
+        display: none;
+    }
+    
+    .seeProgram {
+        font-family: 'Lato', serif;
+        font-size: 130%;
+        text-align: center;
+        align-self: center;
+        color: #d3d3d3;
+        margin: auto;
+    }
+
+    .items-container {
+        display: flex;
+        flex-direction: row;
+        margin-right: 0%;
+        padding-bottom: 0%;
+        width: 100%;
+        margin-bottom: 0%;
+    }
+
+    .itemss {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        line-height: 15px;
+        align-items: center;
+    }
+
+    .speaker {
+        margin: 5%;
+    }
+
+    .speakers-cards {
+        display: flex;
+        margin: auto;
+        width: 65%;
+        height: auto;
+        justify-items: center;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+}
+
 .featured-speakers {
     background-color:#ffff;
     margin-bottom: 0%;
 }
 
 .feat-title {
-    justify-content: center;
+    text-align: center;
 }
 
 .title-speakers {
@@ -405,25 +542,33 @@ button.hamb {
     margin-bottom: 0%;
 }
 
-.partner-holder {
-    color: #d3d3d3;
-    list-style: none;
-    display: flex;
+.part {
+   text-align: center;
 }
 
 .indicator {
-    size: 50%;
     align-self: center;
-    margin-left: 45%;
-    width: 10%;
-
+       
 }
 
-.holder {
+.partner-holder {
     display: flex;
     flex-direction: column;
-    color: #d3d3d3;
+    color: #393939;
     margin-left: 5%;
     margin-right: 15%;
     padding-bottom: 10%;
+}
+
+@media screen and (min-width: 768px) {
+    .partner-holder {
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .partner-class {
+        font-size: 150%
+    }
 }
