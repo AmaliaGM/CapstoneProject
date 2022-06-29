@@ -205,21 +205,13 @@ button.hamb {
 .title1 {
     font-family: 'Cocogoose', sans-serif;
     color: #ec5242;
-    font-size: 270%;
+    font-size: 230%;
     font-weight: 900;
     line-height: 40px;
     margin-top: 10%;
-    margin-bottom: 0%;
+    margin-bottom: 10%;
     padding: 0%;
-    text-decoration: #272a31;
-}
-
-.title2 {
-    font-family: 'Lato', sans-serif;
-    color: #ec5242;  
-    margin-bottom: 0%;  
-    font-size: 110%;
-    margin-top: 15%;
+    text-align: center;
 }
 
 .comment {
@@ -238,7 +230,7 @@ button.hamb {
 .circle {
     position: relative;
     margin-bottom: 5%;
-    margin-left: 60%;
+    margin-right: 70%;
     margin-top: -5%;
 }
 
@@ -255,10 +247,12 @@ button.hamb {
     padding: 3%;
     margin-top: 0%;
     margin-bottom: 0%;
+    text-align: center;
 }
 
 .date {
     margin-top: 55%;
+    text-align: center;
 }
 
 .date-set {
@@ -277,7 +271,7 @@ button.hamb {
 }
 
 .program {
-    background-color:#1d2025;
+    background-color:white;
     padding-bottom: 20%;
     padding-top: 10%;
 }
@@ -288,9 +282,9 @@ button.hamb {
 }
 
 .pr-title {
-    color: #d3d3d3;
+    color:#272a31;
     font-family: 'Lato', sans-serif;
-    font-size: 110%;
+    font-size: 130%;
     text-align: center;
     padding-top: 0%;
     font-weight: 100;
@@ -298,145 +292,46 @@ button.hamb {
     margin-bottom: 0%;
 }
 
-.program-items {
-    padding: 10%;
-    margin-top: 10%;
-    margin-bottom: 5%;
-}
-
-.items-container {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    height: 20%;
-    padding-bottom: 5%;
-    margin-bottom: 5%;
+.logocreat {
+    margin-top: 5%;
+    font-family: 'Lato', serif;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .itemss {
-    display: flex;
-    background-color: #272a31;
-    margin-bottom: 3%;
-    margin-left: 2%;
-    padding: 1%;
-}
-
-.lecture {
-    display: flex;
-    font-family: 'Cocogoose', sans-serif;
-    font-size: 90%;
-    color: #ec5242;
-    align-self: center;
-    text-align: left;
-    width: 30%;
-    margin-right: 5px;
-}
-
-.lecturep {
-    display: flex;
-    font-family: 'Cocogoose', sans-serif;
-    font-size: 60%;
-    color: #d3d3d3;
-    text-align: left;
-    align-self: center;
-    width: 40%;
-    line-height: 10px;
+    text-align: center;
 }
 
 .itemsimg {
-    width: 15%;
-    height: auto;
-    margin: 5%;
-    background-color: #272a31;
-}
-
-.programLink {
-    display: flex;
-    justify-content: center;
-}
-
-.join {
-    width: 30%;
-    height: 15%;
-    color: #d3d3d3;
-    background-color: #ec5242;
-    font-size: 80%;
-    padding: 6% 15%;
+    align-self: center;
     text-align: center;
-    text-decoration: none;
-    justify-content: center;
-    margin: 18%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    margin-top: 5%;
 }
 
-.seeProgram {
-    display: none;
+hr {
+    text-decoration: dashed;
 }
 
 @media screen and (min-width: 768px) {
     .title1 {
         font-size: 400%;
         line-height: 70px;
-        margin-bottom: 10%;
-    }
-
-    .title2 {
-        margin-top: 10%;
-        font-size: 190%;
+        margin-bottom: 15%;
+        margin-left: 10%;
     }
 
     .comment {
-        margin-top: -5%;
-        margin-right: 35%
+        background-color: white;
+        margin-left: 10%;
+        margin-top: -19%
     }
 
-    .date {
-        margin-top: 15%;
-    }
-
-    .join {
-        display: none;
-    }
-    
-    .seeProgram {
-        font-family: 'Lato', serif;
-        font-size: 130%;
-        text-align: center;
+    .itemsimg {
         align-self: center;
-        color: #d3d3d3;
-        margin: auto;
-    }
-
-    .items-container {
-        display: flex;
-        flex-direction: row;
-        margin-right: 0%;
-        padding-bottom: 0%;
-        width: 100%;
-        margin-bottom: 0%;
-    }
-
-    .itemss {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        line-height: 15px;
-        align-items: center;
-    }
-
-    .speaker {
-        margin: 5%;
-    }
-
-    .speakers-cards {
-        display: flex;
-        margin: auto;
-        width: 65%;
-        height: auto;
-        justify-items: center;
-    }
-
-    .cards {
-        flex-wrap: wrap;
+        text-align: center;
     }
 
 }
@@ -460,71 +355,20 @@ button.hamb {
     font-weight: 800;
 }
 
-.speaker-cards {
-    margin-top: 5%;
-    display: flex;  
-}
-
-.cards {
-    list-style: none;
+.surgeryImg {
     display: flex;
-    flex-direction: column;
-    margin-right: 5%;
-    margin-top: 5%;
+    justify-content: space-around;
 }
 
-.speaker {
-    display: flex;
-    width: 95%;
-    height: 20%;
-    padding-bottom: 5%;
-    margin-bottom: 5%;
-}
-
-.speaker-title {
-    text-align: left;
-    font-family: 'Lato', serif;
-    background-color: #ffff;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    font-size: 100%;
-    font-weight: 150;
-}
-
-.speaker-subt {
-    color:#ec5242;
-    font-family: 'Lato', serif;
-    font-size: 80%;
-    font-weight: 300;
-}
-
-.speaker-descript {
-    font-family: 'Lato', serif;
-    text-align: left;
-    font-size: 60%;
-}
-
-.dot {
-    position: relative;
-    top: 0;
-    left: 0;
+.surgimg {
     width: 40%;
+    margin-top: 10%;
+    
 }
 
-.square {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-right: 5%;
-}
-
-.speakerimg {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 90%;
-    height: 90%;
-    margin-right: 10px;
+.previous {
+    text-align: center;
+    font-family: 'Lato', serif;
 }
 
 .partnership {
