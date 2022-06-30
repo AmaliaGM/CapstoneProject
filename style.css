@@ -442,7 +442,6 @@ button.hamb {
     height: auto;
     justify-items: center;
   }
-
 }
 
 .featured-speakers {
@@ -461,10 +460,6 @@ button.hamb {
   margin-top: -10%;
 }
 
-.speak .speaker-subt {
-  color: #ec5242;
-}
-
 .speakers-cards {
   margin-top: 5%;
   display: flex;
@@ -476,8 +471,8 @@ button.hamb {
   display: flex;
   flex-wrap: wrap;
   margin-right: 5%;
-  margin-top: 5%; 
- }
+  margin-top: 5%;
+}
 
 .speaker {
   width: 95%;
@@ -503,6 +498,10 @@ button.hamb {
   font-family: 'Lato', serif;
   font-size: 80%;
   font-weight: 300;
+}
+
+.speak .speaker-subt {
+  color: #ec5242;
 }
 
 .speaker-descript {
@@ -532,12 +531,10 @@ button.hamb {
   left: 10px;
   width: 15%;
   height: auto;
- 
 }
 
 .sp {
   display: flex;
-
 }
 
 .partnership {
@@ -644,7 +641,6 @@ button.hamb {
   margin-top: 2%;
   margin-left: 0;
   margin-right: 5%;
- 
 }
 
 /* .program {

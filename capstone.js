@@ -82,36 +82,3 @@ function speaker() {
 }
 speaker();
   
-// -----------FEATURED SPEAKERS----------//
-{/* const speakers=document.querySelector(".speakers")
-
-const speakerDetails = [
-  {
-    speakerbg: "../assets/speakers/chess.png",
-    speakerimage: "../assets/speakers/oprah.jpg",
-    speakername: "Oprah Gail Winfrey",
-    firstintro:
-      "Oprah Winfrey an American talk  , actress, author, and philanthropist.",
-    secondintro:
-      "Dubbed the Queen of All Media, was once the world's only black billionaire.",
-  },
-
-  {
-    speakerbg: "../assets/speakers/chess.png",
-    speakerimage: "../assets/speakers/Dangote.jpg",
-    speakername: "Aliko Dangote",
-    firstintro:
-      "He is a billionaire business magnate.CEO of the Dangote Group.",
-    secondintro:
-      "Dangote became Nigeria's first billionaire in 2007.",
-  },
-
-  {
-    speakerbg: "../assets/speakers/chess.png",
-    speakerimage: "../assets/speakers/gates.jpg",
-    speakername:"Bill Gates",
-    firstintro:"He is business magnate philanthropist and co-founder of Microsoft",
-    secondintro: "Bill Gates has he
-
-${objects[i].property}
-  */}
