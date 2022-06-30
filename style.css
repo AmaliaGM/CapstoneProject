@@ -133,26 +133,38 @@ button.hamb {
   position: fixed;
   z-index: 98;
   width: 100%;
+  justify-content: space-between;
 }
 
 .logo {
   text-align: left;
-  margin-right: 20%;
-  margin-left: 50%;
+  margin-right: -10%;
+  margin-left: 10%;
+  padding-right: 20%;
 }
 
 .navbartop {
   display: flex;
   align-items: center;
-  width: 40%;
+  width: 95%;
+  justify-content: space-around;
+}
+
+.top {
+  display: flex;
+  text-align: right;
+  justify-content: end;
 }
 
 .nbt {
+  text-decoration: none;
+  color: #272a31;
   display: none;
   text-align: right;
   font-family: 'Lato', sans-serif;
   font-size: 100%;
   padding: 5%;
+  justify-self: flex-end;
 }
 
 @media screen and (min-width: 768px) {
@@ -172,7 +184,11 @@ button.hamb {
   }
 
   .navbartop {
-    width: 40%;
+    width: 95%;
+  }
+
+  .navbar2 {
+    position: relative;
   }
 }
 
@@ -311,7 +327,7 @@ button.hamb {
 .lecture {
   display: flex;
   font-family: 'Cocogoose', sans-serif;
-  font-size: 90%;
+  font-size: 100%;
   color: #ec5242;
   align-self: center;
   text-align: left;
@@ -322,16 +338,16 @@ button.hamb {
 .lecturep {
   display: flex;
   font-family: 'Cocogoose', sans-serif;
-  font-size: 60%;
+  font-size: 90%;
   color: #d3d3d3;
   text-align: left;
   align-self: center;
   width: 40%;
-  line-height: 10px;
+  line-height: 15px;
 }
 
 .itemsimg {
-  width: 15%;
+  width: 20%;
   height: auto;
   margin: 5%;
   background-color: #272a31;
@@ -411,6 +427,7 @@ button.hamb {
     height: 100%;
     line-height: 15px;
     align-items: center;
+    justify-content: space-evenly;
   }
 
   .speaker {
@@ -469,14 +486,16 @@ button.hamb {
   margin-bottom: 5%;
 }
 
-.speaker-title {
-  text-align: left;
+.title-speakers {
+  text-align: center;
+  color: #272a31;
   font-family: 'Lato', serif;
-  background-color: #ffff;
   margin-top: 0%;
   margin-bottom: 0%;
   font-size: 100%;
-  font-weight: 150;
+  font-weight: 800;
+  background-color: white;
+  padding-top: 10%;
 }
 
 .speaker-subt {
@@ -691,7 +710,7 @@ hr {
   .ab-comment {
     background-color: white;
     margin-left: 10%;
-    margin-top: -19%;
+    margin-top: -5%;
   }
 
   .ab-itemsimg {
