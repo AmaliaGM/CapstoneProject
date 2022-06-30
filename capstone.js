@@ -14,45 +14,45 @@ hamburguer.addEventListener('click', () => {
 //  ----Speaker cards------
 const speakers = document.querySelector('.speakers-cards');
 const speakerCardsArray = [{
-      heading: 'Young Mog',
-      image: 'assets/YoungMog.jpg',
-      badge1: 'Sungkyunkwan University of Medicine',
-      badge2: 'South Korea',
-      image2: 'assets/dottedSquare.png',
-    },
+  heading: 'Young Mog',
+  image: 'assets/YoungMog.jpg',
+  badge1: 'Sungkyunkwan University of Medicine',
+  badge2: 'South Korea',
+  image2: 'assets/dottedSquare.png',
+},
 
-    {
-      heading: 'Sergey Suchkov',
-      image: 'assets/SergeySuchkov.jpg',
-      badge1: 'Sechenov University',
-      badge2: 'Russia',
-      image2: 'assets/dottedSquare.png',
-    },
+{
+  heading: 'Sergey Suchkov',
+  image: 'assets/SergeySuchkov.jpg',
+  badge1: 'Sechenov University',
+  badge2: 'Russia',
+  image2: 'assets/dottedSquare.png',
+},
 
-    {
-      heading: 'Donato Bonifazi',
-      image: 'assets/DonatoBonifazi.jpg',
-      badge1: 'Biological and Pharmacological Evaluations',
-      badge2: 'Italy',
-      image2: 'assets/dottedSquare.png',
-    },
+{
+  heading: 'Donato Bonifazi',
+  image: 'assets/DonatoBonifazi.jpg',
+  badge1: 'Biological and Pharmacological Evaluations',
+  badge2: 'Italy',
+  image2: 'assets/dottedSquare.png',
+},
 
-    {
-      heading: 'Antonino Araco',
-      image: 'assets/AntoninoAraco.jpg',
-      badge1: 'University of Camerino and Torino',
-      badge2: 'Italy',
-      image2: 'assets/dottedSquare.png',
-    },
+{
+  heading: 'Antonino Araco',
+  image: 'assets/AntoninoAraco.jpg',
+  badge1: 'University of Camerino and Torino',
+  badge2: 'Italy',
+  image2: 'assets/dottedSquare.png',
+},
 
-    {
-      heading: 'Federico Benetti',
-      image: 'assets/FedericoBenetti.jpg',
-      badge1: 'Benetty Foundation',
-      badge2: 'Argentina',
-      image2: 'assets/dottedSquare.png',
-    },
-    ];
+{
+  heading: 'Federico Benetti',
+  image: 'assets/FedericoBenetti.jpg',
+  badge1: 'Benetty Foundation',
+  badge2: 'Argentina',
+  image2: 'assets/dottedSquare.png',
+},
+];
 
 function speaker() {
   let speakerCard = '<ul class="cards">';
