@@ -164,6 +164,10 @@ button.hamb {
   justify-self: flex-end;
 }
 
+.nbt:hover {
+  border: solid #ec5242 1px;
+}
+
 @media screen and (min-width: 768px) {
   .navItem1 {
     display: flex;
@@ -323,6 +327,10 @@ button.hamb {
   padding: 1%;
 }
 
+.items:hover {
+  border: solid #d3d3d3 2px;
+}
+
 .lecture {
   display: flex;
   font-family: 'Cocogoose', sans-serif;
@@ -455,8 +463,10 @@ button.hamb {
 .speak {
   display: flex;
   flex-direction: column;
-  margin-left: 20%;
+  margin-left: 25%;
   margin-top: -10%;
+  justify-content: start;
+  line-height: 5px;
 }
 
 .speakers-cards {
@@ -486,28 +496,33 @@ button.hamb {
   font-family: 'Lato', serif;
   margin-top: 0%;
   margin-bottom: 0%;
-  font-size: 100%;
+  font-size: 160%;
   font-weight: 800;
   background-color: white;
   padding-top: 10%;
 }
 
+.speaker-title {
+  font-family: 'Lato', serif;
+  font-size: 100%;
+  margin-top: 0%;
+}
+
 .speaker-subt {
   color: #ec5242;
   font-family: 'Lato', serif;
-  font-size: 80%;
+  font-size: 100%;
   font-weight: 300;
-}
-
-.speak .speaker-subt {
-  color: #ec5242;
+  margin-top: 0%;
+  line-height: 15px;
 }
 
 .speaker-descript {
   color: #272a31;
   font-family: 'Lato', serif;
   text-align: left;
-  font-size: 60%;
+  font-size: 90%;
+  margin-top: 0%;
 }
 
 .dot {
@@ -664,11 +679,6 @@ button.hamb {
   margin-left: 5%;
   margin-right: 5%;
 }
-
-/*
-.itemss {
-    text-align: center;
-} */
 
 .ab-itemsimg {
   align-self: center;
