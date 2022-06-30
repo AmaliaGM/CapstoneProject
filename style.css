@@ -178,11 +178,9 @@ button.hamb {
 
 .title {
   height: 200%;
-  width: 80%;
+  width: 100%;
   text-align: left;
   margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 20%;
   padding-top: 10%;
 }
 
@@ -223,7 +221,7 @@ button.hamb {
 .circle {
   position: relative;
   margin-bottom: 5%;
-  margin-left: 60%;
+  margin-left: 50%;
   margin-top: -5%;
   z-index: 50;
 }
@@ -246,7 +244,7 @@ button.hamb {
 }
 
 .date {
-  margin-top: 55%;
+  margin-top: 35%;
 }
 
 .date-set {
@@ -277,7 +275,7 @@ button.hamb {
 }
 
 .pr-title {
-  color: #272a31;
+  color: #d3d3d3;
   font-family: 'Lato', sans-serif;
   font-size: 110%;
   text-align: center;
@@ -354,7 +352,6 @@ button.hamb {
   text-align: center;
   text-decoration: none;
   justify-content: center;
-  margin: 18%;
 }
 
 .seeProgram {
@@ -383,7 +380,7 @@ button.hamb {
   }
 
   .circle {
-    margin-left: 70%;
+    margin-left: 50%;
   }
 
   .join {
@@ -418,6 +415,7 @@ button.hamb {
 
   .speaker {
     margin: 5%;
+    display: block;
   }
 
   .speakers-cards {
@@ -428,9 +426,6 @@ button.hamb {
     justify-items: center;
   }
 
-  .cards {
-    flex-wrap: wrap;
-  }
 }
 
 .featured-speakers {
@@ -442,21 +437,32 @@ button.hamb {
   text-align: center;
 }
 
-.speaker-cards {
+.speak {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  margin-top: -10%;
+}
+
+.speak .speaker-subt {
+  color: #ec5242;
+}
+
+.speakers-cards {
   margin-top: 5%;
   display: flex;
+  flex-direction: column;
 }
 
 .cards {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   margin-right: 5%;
-  margin-top: 5%;
-}
+  margin-top: 5%; 
+ }
 
 .speaker {
-  display: flex;
   width: 95%;
   height: 20%;
   padding-bottom: 5%;
@@ -491,7 +497,7 @@ button.hamb {
   position: relative;
   top: 0;
   left: 0;
-  width: 40%;
+  width: 8%;
 }
 
 .square {
@@ -505,9 +511,14 @@ button.hamb {
   position: absolute;
   top: 10px;
   left: 10px;
-  width: 90%;
+  width: 15%;
   height: auto;
-  margin-right: 10px;
+ 
+}
+
+.sp {
+  display: flex;
+
 }
 
 .partnership {
@@ -537,9 +548,9 @@ button.hamb {
   display: flex;
   flex-direction: column;
   color: #393939;
-  margin-left: 5%;
-  margin-right: 15%;
-  padding-bottom: 10%;
+  margin-left: 0%;
+  padding-bottom: 5%;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -555,6 +566,10 @@ button.hamb {
   }
 }
 
+.ab-title {
+  background-color: #d3d3d3;
+}
+
 .ab-title1 {
   font-family: 'Cocogoose', sans-serif;
   color: #ec5242;
@@ -563,15 +578,16 @@ button.hamb {
   line-height: 40px;
   margin-top: 10%;
   margin-bottom: 10%;
-  padding: 0%;
   text-align: center;
+  margin-right: 5%;
+  padding-top: 20%;
 }
 
 .ab-circle {
   position: relative;
   margin-bottom: 5%;
   margin-right: 70%;
-  margin-top: -5%;
+  margin-top: 0%;
   z-index: 50;
 }
 
@@ -587,7 +603,7 @@ button.hamb {
   line-height: 25px;
   align-self: center;
   padding: 3%;
-  margin-top: 0%;
+  margin-top: -15%;
   margin-bottom: 0%;
   text-align: center;
   z-index: 51;
@@ -597,15 +613,19 @@ button.hamb {
 }
 
 .ab-date {
-  margin-top: 55%;
+  margin-top: 34%;
   text-align: center;
-  margin-left: 5%;
+  margin-left: 0%;
+  padding-bottom: 5%;
 }
 
 .ab-location {
   font-family: 'Lato', sans-serif;
   font-size: 100%;
   margin-top: 2%;
+  margin-left: 0;
+  margin-right: 5%;
+ 
 }
 
 /* .program {
@@ -697,6 +717,8 @@ hr {
   margin-bottom: 0%;
   font-size: 100%;
   font-weight: 800;
+  background-color: white;
+  padding-top: 10%;
 }
 
 .surgeryImg {
