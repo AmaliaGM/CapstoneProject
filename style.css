@@ -75,7 +75,6 @@ button.hamb {
   background-color: transparent;
   cursor: pointer;
   display: block;
-  cursor: pointer;
   animation: transform 1s;
 }
 
