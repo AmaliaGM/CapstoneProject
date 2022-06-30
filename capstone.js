@@ -1,4 +1,4 @@
-const hamburguer = document.querySelector('.hamburguer');
+const hamburguer = document.querySelector('.hamb');
 const menu = document.querySelector('#nav-menu');
 const body = document.querySelector('body');
 

@@ -68,7 +68,12 @@ a.nav-link {
   flex-direction: column;
 }
 
-.hamburguer {
+button.hamb {
+  margin-top: 3%;
+  margin-left: 3%;
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
   display: block;
   cursor: pointer;
   animation: transform 1s;
@@ -85,24 +90,16 @@ a.nav-link {
   color: white;
 }
 
-.hamburguer.active .bar:nth-child(2) {
+.hamb.active .bar:nth-child(2) {
   opacity: 0;
 }
 
-.hamburguer.active .bar:nth-child(1) {
+.hamb.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
-.hamburguer.active .bar:nth-child(3) {
+.hamb.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-}
-
-button.hamb {
-  margin-top: 3%;
-  margin-left: 3%;
-  border-style: none;
-  background-color: transparent;
-  cursor: pointer;
 }
 
 #nav-menu {
@@ -134,6 +131,7 @@ button.hamb {
   z-index: 98;
   width: 100%;
   justify-content: space-between;
+  overflow-y: hidden;
 }
 
 .logo {
