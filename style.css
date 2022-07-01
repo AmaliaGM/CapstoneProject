@@ -149,7 +149,7 @@ button.hamb {
 }
 
 .navSurgery {
-  display: none
+  display: none;
 }
 
 .top {
@@ -205,7 +205,6 @@ button.hamb {
   .navbar2 {
     position: relative;
   }
-
 }
 
 .title {
@@ -404,7 +403,6 @@ button.hamb {
   }
 
   .title2 {
-    margin-top: 10%;
     font-size: 190%;
     margin-top: 0%;
   }
@@ -611,7 +609,6 @@ button.hamb {
   justify-content: space-evenly;
   font-size: 150%;
   text-decoration: none;
-
 }
 
 .holder1 {
@@ -638,10 +635,10 @@ button.hamb {
     width: 40%;
     margin-left: 10%;
   }
+
   .partner-holder {
     margin-left: 0;
     margin-right: 0;
-    justify-content: center;
     align-items: center;
     margin-bottom: 0%;
     justify-content: space-evenly;
@@ -822,7 +819,6 @@ hr {
     width: 40%;
     margin-top: 5%;
   }
-
 }
 
 .foot {
