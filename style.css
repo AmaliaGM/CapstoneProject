@@ -47,13 +47,13 @@ a.nav-link {
 
 .navbar {
   min-height: 50px;
-  display: block;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 99;
+  background-color:#ffff;
   margin: 0;
 }
 
@@ -116,7 +116,7 @@ button.hamb {
   top: 70px;
   background-color: white;
   text-align: left;
-  z-index: 99;
+  z-index: 101;
 }
 
 .nav-link {
@@ -129,22 +129,27 @@ button.hamb {
   position: fixed;
   z-index: 98;
   width: 100%;
-  justify-content: space-between;
+  justify-content: end;
   overflow-y: hidden;
 }
 
 .logo {
   text-align: left;
-  margin-right: -10%;
-  margin-left: 10%;
-  padding-right: 20%;
+  margin-right: 0%;
+  margin-left: 0%;
+  padding-right: 0%;
+  z-index: 100;
 }
 
 .navbartop {
   display: flex;
   align-items: center;
-  width: 95%;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navSurgery {
+  display: none
 }
 
 .top {
@@ -164,14 +169,23 @@ button.hamb {
   justify-self: flex-end;
 }
 
+.nbt.surgery {
+  border: solid #ec5242 2px;
+  color: #ec5242;
+}
+
 .nbt:hover {
-  border: solid #ec5242 1px;
+  color: #ec5242;
 }
 
 @media screen and (min-width: 768px) {
   .navItem1 {
     display: flex;
     text-align: right;
+  }
+
+  .navSurgery {
+    display: contents;
   }
 
   .nbt {
@@ -191,6 +205,7 @@ button.hamb {
   .navbar2 {
     position: relative;
   }
+
 }
 
 .title {
@@ -208,7 +223,6 @@ button.hamb {
   font-weight: 900;
   line-height: 40px;
   margin-top: 10%;
-  margin-bottom: 0%;
   padding: 0%;
   text-decoration: #272a31;
 }
@@ -228,7 +242,7 @@ button.hamb {
   margin-right: 5%;
   margin-left: 0%;
   margin-top: -13%;
-  margin-bottom: 5%;
+  padding-bottom: 5%;
   border: solid white 3px;
   align-content: center;
   justify-content: center;
@@ -238,7 +252,6 @@ button.hamb {
 
 .circle {
   position: relative;
-  margin-bottom: 5%;
   margin-left: 50%;
   margin-top: -5%;
   z-index: 50;
@@ -257,7 +270,7 @@ button.hamb {
   align-self: center;
   padding: 3%;
   margin-top: 0%;
-  margin-bottom: 0%;
+  margin-bottom: -10%;
   z-index: 51;
 }
 
@@ -322,12 +335,12 @@ button.hamb {
 .itemss {
   display: flex;
   background-color: #272a31;
-  margin-bottom: 3%;
-  margin-left: 2%;
+  margin: 3%;
   padding: 1%;
+  text-align: center;
 }
 
-.items:hover {
+.itemss:hover {
   border: solid #d3d3d3 2px;
 }
 
@@ -337,9 +350,8 @@ button.hamb {
   font-size: 100%;
   color: #ec5242;
   align-self: center;
-  text-align: left;
-  width: 30%;
-  margin-right: 5px;
+  text-align: center;
+  line-height: 20px;
 }
 
 .lecturep {
@@ -347,9 +359,9 @@ button.hamb {
   font-family: 'Cocogoose', sans-serif;
   font-size: 90%;
   color: #d3d3d3;
-  text-align: left;
+  text-align: center;
   align-self: center;
-  width: 40%;
+  width: 60%;
   line-height: 15px;
 }
 
@@ -363,6 +375,8 @@ button.hamb {
 .programLink {
   display: flex;
   justify-content: center;
+  margin-top: 10%;
+  text-decoration: underline;
 }
 
 .join {
@@ -386,11 +400,13 @@ button.hamb {
     font-size: 400%;
     line-height: 70px;
     margin-bottom: 10%;
+    margin-top: 0%;
   }
 
   .title2 {
     margin-top: 10%;
     font-size: 190%;
+    margin-top: 0%;
   }
 
   .comment {
@@ -406,17 +422,24 @@ button.hamb {
     margin-left: 50%;
   }
 
+  .program {
+    margin-bottom: 0%;
+    padding-bottom: 10%;
+  }
+
   .join {
     display: none;
   }
 
   .seeProgram {
+    display: contents;
     font-family: 'Lato', serif;
-    font-size: 130%;
+    font-size: 110%;
     text-align: center;
     align-self: center;
     color: #d3d3d3;
     margin: auto;
+    margin-top: 5%;
   }
 
   .items-container {
@@ -438,16 +461,21 @@ button.hamb {
   }
 
   .speaker {
-    margin: 5%;
     display: block;
+    width: 40%;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    width: 100%;
+    height: 20%;
+    margin-right: 0%;
   }
 
   .speakers-cards {
     display: flex;
-    margin: auto;
-    width: 65%;
-    height: auto;
-    justify-items: center;
+    width: 100%;
   }
 }
 
@@ -477,7 +505,6 @@ button.hamb {
 
 .cards {
   list-style: none;
-  display: flex;
   flex-wrap: wrap;
   margin-right: 5%;
   margin-top: 5%;
@@ -548,7 +575,7 @@ button.hamb {
 }
 
 .sp {
-  display: flex;
+  display: block;
 }
 
 .partnership {
@@ -576,20 +603,48 @@ button.hamb {
 
 .partner-holder {
   display: flex;
-  flex-direction: column;
-  color: #393939;
-  margin-left: 0%;
-  padding-bottom: 5%;
-  text-align: center;
+  color: #272a31;
+  padding-left: 0%;
+  padding-bottom: 10%;
+  padding-top: 3%;
+  text-align: justify;
+  justify-content: space-evenly;
+  font-size: 150%;
+  text-decoration: none;
+
+}
+
+.holder1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: dimgrey;
+  text-decoration: none;
+  margin-left: 0;
+}
+
+.holder2 {
+  font-family: 'Times New Roman', Times, serif;
+  color: dimgrey;
+  text-decoration: none;
+}
+
+.holder3 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: dimgrey;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
+  .sp {
+    width: 40%;
+    margin-left: 10%;
+  }
   .partner-holder {
     margin-left: 0;
     margin-right: 0;
     justify-content: center;
     align-items: center;
     margin-bottom: 0%;
+    justify-content: space-evenly;
   }
 
   .partner-class {
@@ -608,14 +663,12 @@ button.hamb {
   font-weight: 900;
   line-height: 40px;
   margin-top: 10%;
-  margin-bottom: 10%;
   text-align: center;
   padding-top: 20%;
 }
 
 .ab-circle {
   position: relative;
-  margin-bottom: 10%;
   margin-left: 8%;
   margin-right: 70%;
   margin-top: 0%;
@@ -684,8 +737,8 @@ button.hamb {
   align-self: center;
   text-align: center;
   margin-left: 0%;
-  margin-bottom: 20%;
-  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-top: 3%;
   padding: 3%;
   border: solid gray;
 }
@@ -710,9 +763,12 @@ hr {
 
   .ab-comment-1 {
     background-color: white;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: auto;
     margin-top: -20%;
+  }
+
+  .ab-comment {
+    margin-left: 5%;
   }
 
   .ab-itemsimg {
@@ -766,6 +822,7 @@ hr {
     width: 40%;
     margin-top: 5%;
   }
+
 }
 
 .foot {
@@ -780,4 +837,8 @@ hr {
 
 .footimg {
   width: 100%;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  margin-right: 30%;
 }
